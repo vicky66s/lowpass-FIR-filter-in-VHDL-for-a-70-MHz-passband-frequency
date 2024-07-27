@@ -12,7 +12,7 @@ entity LowpassFilter is
 end LowpassFilter;
 
 architecture Behavioral of LowpassFilter is
-    type tap_array is array(0 to 100) of integer;  -- Number of taps 0.0
+    type tap_array is array(0 to 100) of integer;  -- Number of taps 
     signal taps : tap_array := (0, ...);           -- Filter coefficients
     signal delay_line : tap_array := (others => 0); -- Delay line for input samples
     signal acc : integer := 0;                     -- Accumulator for filter output
