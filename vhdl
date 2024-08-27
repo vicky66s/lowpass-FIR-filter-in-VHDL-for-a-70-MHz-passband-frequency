@@ -4,7 +4,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity LowpassFilter is
     Port (
-        clk       : in  std_logic;           -- Clock input
+        clk       : in  std_logic;           -- Clock input 00000000000000000000000000
         reset     : in  std_logic;           -- Reset input
         data_in   : in  signed(15 downto 0); -- Input data
         data_out  : out signed(15 downto 0) -- Output data
